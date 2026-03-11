@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Decentralized Multi-Robot Relative Navigation in Unknown, Structurally Constrained Environments under Limited Communication">
+  <meta name="description" content="Multi-robot navigation in unknown, structurally constrained, and GPS-denied environments presents a fundamental trade-off between global strategic foresight and local tactical agility, particularly under limited communication. Centralized methods achieve global optimality but suffer from high communication overhead, while distributed methods are efficient but lack the broader awareness to avoid deadlocks and topological traps. To address this, we propose a fully decentralized, hierarchical relative navigation framework that achieves both strategic foresight and tactical agility without a unified coordinate system. At the strategic layer, robots build and exchange lightweight topological maps upon opportunistic encounters. This process fosters an emergent global awareness, enabling the planning of efficient, trap-avoiding routes at an abstract level. This high-level plan then inspires the tactical layer, which operates on local metric information. Here, a sampling-based ‘escape point’ strategy resolves dense spatio-temporal conflicts by generating dynamically feasible trajectories in real time, concurrently satisfying tight environmental and kinodynamic constraints. Extensive simulations and real-world experiments demonstrate that our system significantly outperforms in success rate and efficiency, especially in communication-limited environments with complex topological structures.">
+  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <meta property="og:title" content="Decentralized Multi-Robot Relative Navigation in Unknown, Structurally Constrained Environments under Limited Communication">
+  <meta property="og:description" content="Multi-robot navigation in unknown, structurally constrained, and GPS-denied environments presents a fundamental trade-off between global strategic foresight and local tactical agility, particularly under limited communication. Centralized methods achieve global optimality but suffer from high communication overhead, while distributed methods are efficient but lack the broader awareness to avoid deadlocks and topological traps. To address this, we propose a fully decentralized, hierarchical relative navigation framework that achieves both strategic foresight and tactical agility without a unified coordinate system. At the strategic layer, robots build and exchange lightweight topological maps upon opportunistic encounters. This process fosters an emergent global awareness, enabling the planning of efficient, trap-avoiding routes at an abstract level. This high-level plan then inspires the tactical layer, which operates on local metric information. Here, a sampling-based ‘escape point’ strategy resolves dense spatio-temporal conflicts by generating dynamically feasible trajectories in real time, concurrently satisfying tight environmental and kinodynamic constraints. Extensive simulations and real-world experiments demonstrate that our system significantly outperforms in success rate and efficiency, especially in communication-limited environments with complex topological structures.">
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Decentralized Multi-Robot Relative Navigation in Unknown, Structurally Constrained Environments under Limited Communication - Research Preview">
+  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
+  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="KEYWORD1">
+  <meta property="article:tag" content="KEYWORD2">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <meta name="twitter:title" content="Decentralized Multi-Robot Relative Navigation in Unknown, Structurally Constrained Environments under Limited Communication">
+  <meta name="twitter:description" content="Multi-robot navigation in unknown, structurally constrained, and GPS-denied environments presents a fundamental trade-off between global strategic foresight and local tactical agility, particularly under limited communication. Centralized methods achieve global optimality but suffer from high communication overhead, while distributed methods are efficient but lack the broader awareness to avoid deadlocks and topological traps. To address this, we propose a fully decentralized, hierarchical relative navigation framework that achieves both strategic foresight and tactical agility without a unified coordinate system. At the strategic layer, robots build and exchange lightweight topological maps upon opportunistic encounters. This process fosters an emergent global awareness, enabling the planning of efficient, trap-avoiding routes at an abstract level. This high-level plan then inspires the tactical layer, which operates on local metric information. Here, a sampling-based ‘escape point’ strategy resolves dense spatio-temporal conflicts by generating dynamically feasible trajectories in real time, concurrently satisfying tight environmental and kinodynamic constraints. Extensive simulations and real-world experiments demonstrate that our system significantly outperforms in success rate and efficiency, especially in communication-limited environments with complex topological structures.">
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="Decentralized Multi-Robot Relative Navigation in Unknown, Structurally Constrained Environments under Limited Communication - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="Decentralized Multi-Robot Relative Navigation in Unknown, Structurally Constrained Environments under Limited Communication">
+  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
+  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
+  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_conference_title" content="CONFERENCE_NAME">
+  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- Page title (shown in browser tab) -->
+  <title>Decentralized Multi-Robot Relative Navigation in Unknown, Structurally Constrained Environments under Limited Communication - AUTHOR_NAMES | Academic Research</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Decentralized Multi-Robot Relative Navigation in Unknown, Structurally Constrained Environments under Limited Communication",
+    "description": "Multi-robot navigation in unknown, structurally constrained, and GPS-denied environments presents a fundamental trade-off between global strategic foresight and local tactical agility, particularly under limited communication. Centralized methods achieve global optimality but suffer from high communication overhead, while distributed methods are efficient but lack the broader awareness to avoid deadlocks and topological traps. To address this, we propose a fully decentralized, hierarchical relative navigation framework that achieves both strategic foresight and tactical agility without a unified coordinate system. At the strategic layer, robots build and exchange lightweight topological maps upon opportunistic encounters. This process fosters an emergent global awareness, enabling the planning of efficient, trap-avoiding routes at an abstract level. This high-level plan then inspires the tactical layer, which operates on local metric information. Here, a sampling-based ‘escape point’ strategy resolves dense spatio-temporal conflicts by generating dynamically feasible trajectories in real time, concurrently satisfying tight environmental and kinodynamic constraints. Extensive simulations and real-world experiments demonstrate that our system significantly outperforms in success rate and efficiency, especially in communication-limited environments with complex topological structures.",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "FIRST_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "SECOND_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      }
+    ],
+    "datePublished": "2024-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CONFERENCE_OR_JOURNAL_NAME"
+    },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "Multi-robot navigation in unknown, structurally constrained, and GPS-denied environments presents a fundamental trade-off between global strategic foresight and local tactical agility, particularly under limited communication. Centralized methods achieve global optimality but suffer from high communication overhead, while distributed methods are efficient but lack the broader awareness to avoid deadlocks and topological traps. To address this, we propose a fully decentralized, hierarchical relative navigation framework that achieves both strategic foresight and tactical agility without a unified coordinate system. At the strategic layer, robots build and exchange lightweight topological maps upon opportunistic encounters. This process fosters an emergent global awareness, enabling the planning of efficient, trap-avoiding routes at an abstract level. This high-level plan then inspires the tactical layer, which operates on local metric information. Here, a sampling-based ‘escape point’ strategy resolves dense spatio-temporal conflicts by generating dynamically feasible trajectories in real time, concurrently satisfying tight environmental and kinodynamic constraints. Extensive simulations and real-world experiments demonstrate that our system significantly outperforms in success rate and efficiency, especially in communication-limited environments with complex topological structures.",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_1"
+      },
+      {
+        "@type": "Thing", 
+        "name": "RESEARCH_AREA_2"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main id="main-content">
+    <!-- 标题部分 -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                Decentralized Multi-Robot Relative Navigation in Unknown, Structurally Constrained Environments under Limited Communication
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 论文摘要 -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Multi-robot navigation in unknown, structurally constrained, and GPS-denied environments presents a fundamental trade-off between global strategic foresight and local tactical agility, particularly under limited communication. Centralized methods achieve global optimality but suffer from high communication overhead, while distributed methods are efficient but lack the broader awareness to avoid deadlocks and topological traps. To address this, we propose a fully decentralized, hierarchical relative navigation framework that achieves both strategic foresight and tactical agility without a unified coordinate system. At the strategic layer, robots build and exchange lightweight topological maps upon opportunistic encounters. This process fosters an emergent global awareness, enabling the planning of efficient, trap-avoiding routes at an abstract level. This high-level plan then inspires the tactical layer, which operates on local metric information. Here, a sampling-based ‘escape point’ strategy resolves dense spatio-temporal conflicts by generating dynamically feasible trajectories in real time, concurrently satisfying tight environmental and kinodynamic constraints. Extensive simulations and real-world experiments demonstrate that our system significantly outperforms in success rate and efficiency, especially in communication-limited environments with complex topological structures.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 图片展示区：只保留前三张小图，垂直排列 -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <!-- 小图1 -->
+          <div class="columns is-centered">
+            <div class="column is-12">
+              <img src="static/images/图片1.jpg" alt="Result 1" loading="lazy" style="width: 100%;">
+              <h2 class="subtitle has-text-centered" style="font-size: 0.6rem; margin-top: 0.5rem;">
+                Hierarchical topological framework enables emergent global awareness and local agility.
+              </h2>
+            </div>
+          </div>
+          <!-- 小图2 -->
+          <div class="columns is-centered" style="margin-top: 2rem;">
+            <div class="column is-12">
+              <img src="static/images/图片2.jpg" alt="Result 2" loading="lazy" style="width: 100%;">
+              <h2 class="subtitle has-text-centered" style="font-size: 0.6rem; margin-top: 0.5rem;">
+                structure
+              </h2>
+            </div>
+          </div>
+          <!-- 小图3 -->
+          <div class="columns is-centered" style="margin-top: 2rem;">
+            <div class="column is-12">
+              <img src="static/images/图片3.jpg" alt="Result 3" loading="lazy" style="width: 100%;">
+              <h2 class="subtitle has-text-centered" style="font-size: 0.6rem; margin-top: 0.5rem;">
+                An example of the system in action. 
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 视频展示区：五个视频垂直排列 -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title is-3" style="margin-bottom: 2rem;">Videos</h2>
+          <!-- 视频1 -->
+          <div class="columns is-centered">
+            <div class="column is-12">
+              <video controls muted loop width="100%" preload="metadata">
+                <source src="static/videos/video1.mp4" type="video/mp4">
+              </video>
+              <!-- 可添加视频描述，如果需要 -->
+            </div>
+          </div>
+          <!-- 视频2 -->
+          <div class="columns is-centered" style="margin-top: 2rem;">
+            <div class="column is-12">
+              <video controls muted loop width="100%" preload="metadata">
+                <source src="static/videos/video2.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <!-- 视频3 -->
+          <div class="columns is-centered" style="margin-top: 2rem;">
+            <div class="column is-12">
+              <video controls muted loop width="100%" preload="metadata">
+                <source src="static/videos/video3.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <!-- 视频4 -->
+          <div class="columns is-centered" style="margin-top: 2rem;">
+            <div class="column is-12">
+              <video controls muted loop width="100%" preload="metadata">
+                <source src="static/videos/video4.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <!-- 视频5 -->
+          <div class="columns is-centered" style="margin-top: 2rem;">
+            <div class="column is-12">
+              <video controls muted loop width="100%" preload="metadata">
+                <source src="static/videos/video5.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <!-- 注意：第6个视频已移除，只保留五个 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PDF 海报 -->
+    <section class="hero is-small is-light">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title">Article</h2>
+          <iframe src="static/pdfs/sample.pdf" width="100%" height="550"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
